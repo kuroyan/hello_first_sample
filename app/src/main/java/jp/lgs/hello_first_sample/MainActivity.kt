@@ -3,7 +3,9 @@ package jp.lgs.hello_first_sample
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -46,8 +48,17 @@ class MainActivity : AppCompatActivity() {
 
     fun onButtonClick(view: View) {
         val intent = Intent(applicationContext,SubActivity::class.java)
+        //-- toastは以下でもstartActivityの後でも表示タイミングは関係ないようだ
+        //toastMake("画面変更中！！",0,-100)
         startActivity(intent)
+        toastMake("画面変更中！！",0,-100)
     }
 
+    fun toastMake(message: String, x: Int, y: Int) {
+        val toast = Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT)
+        // 位置調整
+        toast.setGravity(Gravity.CENTER, x, y)
+        toast.show()
+    }
 
 }

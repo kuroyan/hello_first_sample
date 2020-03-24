@@ -37,8 +37,11 @@ class SubActivity : AppCompatActivity() {
     }
 
     fun onButtonClick(view: View) {
+        finish()
+        /*
         val intent = Intent(applicationContext,MainActivity::class.java)
         startActivity(intent)
+         */
     }
 
 }
