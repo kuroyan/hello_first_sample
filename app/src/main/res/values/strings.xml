@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">hello_first_sample</string>
+    <string name="helloFirst">こんにちは</string>
+    <string name="helloAgain">またお会いしましたね</string>
+    <string name="pushbtn">押してください</string>
 </resources>
