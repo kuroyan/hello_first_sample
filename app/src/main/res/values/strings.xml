@@ -4,5 +4,6 @@
     <string name="helloAgain">またお会いしましたね</string>
     <string name="pushbtn">押してください</string>
     <string name="retBtn">戻る</string>
-    <string name="next">次の画面</string>
+    <string name="next">第1画面へ</string>
+    <string name="nextNo2">第2画面へ</string>
 </resources>

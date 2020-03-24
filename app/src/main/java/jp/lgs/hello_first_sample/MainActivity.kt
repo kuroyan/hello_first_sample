@@ -51,8 +51,16 @@ class MainActivity : AppCompatActivity() {
         //-- toastは以下でもstartActivityの後でも表示タイミングは関係ないようだ
         //toastMake("画面変更中！！",0,-100)
         startActivity(intent)
-        toastMake("画面変更中！！",0,-100)
+        toastMake("画面１変更中！！",0,-100)
     }
+
+    fun onButtonClick2(view: View){
+        val intent = Intent(applicationContext,Sub2Activity::class.java)
+        startActivity(intent)
+        toastMake("画面２変更中！！",0,-100)
+    }
+
+
 
     fun toastMake(message: String, x: Int, y: Int) {
         val toast = Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT)
